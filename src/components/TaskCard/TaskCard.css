@@ -1,0 +1,50 @@
+:root {
+    --color-white: #fff;
+    --color-back: #000;
+    --color-lightblack: #000000c2;
+}
+
+.taskCard {
+    width: 95%;
+    height: 40px;
+    background-color: var(--color-white);
+    color: var(--color-lightblack);
+    margin: 20px auto;
+    border-left: 1px solid var(--color-back);
+    border-bottom: 1px solid var(--color-back);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taskCard:first-child {
+    margin: 0 auto;
+}
+
+.taskCard p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-left: 8px;
+}
+
+.taskCard .icons {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskCard .icons p {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.taskCard .icons p:last-child {
+    font-size: 22px;
+}
+
+.taskCard .icons p:hover {
+    rotate: -20deg;
+}
